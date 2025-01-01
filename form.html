@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="app.js" method="get">
+      <div>
+        <label for="name">Name</label>
+        <input required type="text" name="username" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone</label>
+        <input required type="number" required name="phone" id="phone" />
+      </div>
+      <br />
+      <div>
+        <label for="address">Address</label>
+        <textarea
+          required
+          name="address"
+          id="address"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <select required name="gender" id="gender">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="">Courses :</label>
+        Frontend <input type="checkbox" name="frontend" id="" /> Backend
+        <input required type="checkbox" name="backend" id="" />
+      </div>
+      <br />
+      <fieldset>
+        <legend>Mode of Payment</legend>
+        <input required type="radio" name="payment" id="" /> Cash
+        <input required type="radio" name="payment" id="" /> Bank
+      </fieldset>
+      <br />
+      <div>
+        <label for="password">Password :</label>
+        <input required type="password" name="password" id="password" />
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
